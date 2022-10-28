@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <style>
+        body{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+    background-blend-mode: darken ;
+  }
+  .reg{
+    border: 3px solid white;
+    margin: 30px 50px;
+    padding: 70px 100px;
+    float: left;
+    border-radius: 12px;
+  }
+    input[type=text], input[type=number], input[type=email], input[type=date]{
+        width: 100%;
+        margin: auto;
+        padding: 5px 12px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+    input[type=submit]{
+        width: 100%;
+        margin: auto;
+        padding: 5px 12px;
+        box-sizing: border-box;
+        color: green;
+        cursor: pointer;
+    }
+    input[type=reset]{
+        width: 100%;
+        margin: auto;
+        padding: 5px 12px;
+        box-sizing: border-box;
+        color: red;   
+        cursor: pointer;
+    }
+    input[type=radio]{
+        cursor: pointer;
+    }
+    a{
+    color: rgb(234, 239, 243);
+    display: block;
+    text-decoration: none;
+    padding: 0  55px;
+    
+}
+a:hover{
+    background-color: rgb(57, 187, 107);
+    border-radius: 15px;
+}
+li{
+    float: left;
+    border: 1px solid rgb(26, 150, 67);
+    border-radius: 15px ;
+}
+ul{
+    list-style: none;
+    line-height: 36px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#active{
+        background-color: rgb(10, 78, 36);
+        border-radius: 15px ;
+}
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+        <li>
+            <a href="index.html" target="_blank">HOME</a>
+        </li>
+        <li>
+            <a id="active" href="registration.html" target="_blank">REGISTRATION</a>
+        </li>
+        <li>
+            <a href="about.html" target="_blank">ABOUT US</a>
+        </li>
+        <li>
+            <a href="contact.html" target="_blank">CONTACT US</a>
+        </li>
+    </ul>
+    </div>
+    
+    
+    <div class="reg">
+        <form action="index.php">
+            <label for="name">
+                <input type="text" placeholder="Enter Your Name">
+            </label>
+            <br><br>
+                <input type="text" placeholder="Enter Father's Name">
+            
+            <br><br>
+            
+                <input type="date" placeholder="Enter DateOfBirth">
+            
+            <br><br>
+            
+                <input type="number" placeholder="Enter Mob Number">
+           
+            <br><br>
+            
+                <input type="email" placeholder="Enter mail id">
+           
+            <br><br>
+            <input type="radio" id="male" value="Male">
+            <label for="male"> <font color="yellow">Male</font color> </label>
+            <input type="radio" id="female" value="Female">
+            <label for="male"><font color="yellow">Female</font color></label>
+            <input type="radio" id="other" value="Other">
+            <label for="male"><font color="yellow">Other</font color></label>
+            <br><br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </div>
+</body>
+</html>
